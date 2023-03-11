@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Ayomi">
+        <meta name="description" content="My second web page">
+        <meta name="keywords" content="html, css, web, web development, seo">
+        <title>BOX's Temperature Converter</title>
+        <link rel="shortcut icon" href="./assets/image/white-cutout-64px.png?v=2" type="image/x-icon"/>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com"crossorigin/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500&display=swap"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="shortcut icon" href="./assets/image/white-cutout-64px.png?v=2" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="./assets/script/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-container flex">
+                <div class="title">
+                    <h1><span>.</span>BOX</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About App</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </nav>
+                <div class="spacing"></div>
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <section>
+                    <h2>Temperature Converter</h2>
+                    <form class="temperature-converter">
+                        <input type="text" id="temperature" class="temperature" placeholder="Temperature">
+                        <div class="radio-buttons">
+                            <input type="radio" id="to-celsius" name="conversion" value="to-celsius" checked>
+                            <label for="to-celsius">To Celsius</label>
+                            <input type="radio" id="to-fahrenheit" name="conversion" value="to-fahrenheit">
+                            <label for="to-fahrenheit">To Fahrenheit</label>
+                        </div>
+                        <div class="convert">
+                            <button type="button" onclick="convertTemperature()">Convert</button>
+                            <button id="theme-switcher" onclick="toggleTheme()">Dark Mode</button>
+                        </div>
+                    </form>
+                    <div id="result"></div>
+                </section>
+            </div>
+        </main>
+    </body>
+</html>
